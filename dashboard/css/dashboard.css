@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h5 {
+  text-align: center;
+  padding-left: 5px;
+}
+.icon {
+  padding-left: 20px;
+}
+
+.form-control {
+  height: 55px;
+  width: 750px;
+  text-indent: 33px;
+  background: #efefef;
+}
+
+.menu {
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 90vh;
+  background-color:white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  color: #5f6368;
+  opacity: 1;
+}
+
+ul.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu:hover {
+  width: 270px;
+}
+
+.menu li:hover {
+  background-color: rgb(221, 220, 217);
+  border-radius: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+.menu li .fa {
+  font-size: 25px;
+  width: 70px;
+  padding: 20px;
+}
+
+.fa {
+  position: relative;
+  display: inline-block;
+}
+
+.fa .sec-icon {
+  visibility: hidden;
+  width: 70px;
+  font-size: small;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+}
+
+.fa:hover .sec-icon {
+  visibility: visible;
+}
+
+.box {
+  position: absolute;
+  top: 110px;
+  left: 100px;
+  width: 90%;
+}
+
+.form span {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+}
+
+.left-side {
+  padding-left: 0px
+}
+
+.form-input {
+  height: 55px;
+  width: 250px;
+  text-indent: 33px;
+  border-radius: 10px
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none
+}
+
+.form-input {
+  min-height: 50px;
+  width: 800px;
+}
+
+.container-sec {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-sec #addBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.notes {
+  height: 150px;
+  width: 150px;
+  background-color: #dbdddf;
+  color: #cecece;
+  border: 1px;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+.notes h1 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.dis-note {
+  display: flex;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.container ul {
+  list-style: none;
+  padding: 20px;
+  margin-top: 30px;
+  width: 570px;
+}
+
+.container li {
+  content: " ";
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 5px 5px;
+  background-color: #c5c3c3;
+  display: flexbox;
+  left: 20px;
+}
+
+.container li span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  width: 50px;
+  text-align: center;
+  background-color: red;
+  font-size: 40px;
+}
+
+.container li {
+  content: "\f08d";
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid;
+  transition: .6 ease all;
+}
+
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #afb6c0;
+  opacity: 1;
+}
+.nav-icons{
+  color: #5f6368;
+  opacity: 1;
+  /* left: 10px; */
+}
+.form-input1 {
+  height: 55px;
+  width: 750px;
+  text-indent: 33px;
+  border-radius: 10px;
+  background: #efefef;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+.navbar {
+  border-bottom: 1px solid white;
+}
+
+input  {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.main-menu:hover{
+    width: 270px;
+}
+
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li:hover{
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+.main-menu li .fa{
+  font-size: 25px;
+  width: 70px;
+   padding: 20px; 
+}
+.fa {
+  position: relative;
+  display: inline-block;
+}
+
+.fa .tooltiptext {
+  visibility: hidden;
+  width: 70px;
+  font-size: small;
+  background-color: rgb(114, 109, 109);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px; 
+}
+
+.fa:hover .tooltiptext {
+  visibility: visible;
+}
+
+.box{
+  position: absolute;
+  top: 110px;
+  left: 100px;
+  width: 90%;  
+}
+.form span {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+ 
+}
+
+.left-pan {
+  padding-left: 7px
+}
+
+.form-input {
+  height: 55px;   
+  width: 550px;
+  text-indent: 33px;
+  border-radius: 10px
+}
+.form-input:focus {
+  box-shadow: none;
+  border: none
+}
+
+.form-input2 {
+  /* width and height of search  */
+  min-height: 135px;
+  width: 550px;
+  border-radius: 10px
+}
+.container-a{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-a #addBtn{
+  position: absolute;
+  right:    0;
+  bottom:   0;
+  background-color: gray;
+margin-top: 50px;
+}
+
+ .container-y{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+} 
+
+.edit_hover_class i{
+  display:none;
+  }
+.edit_hover_class:hover i{
+    display: block;
+}

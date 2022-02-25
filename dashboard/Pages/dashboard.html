@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/dashboard/css/dashboard.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <i class="fa fa-bars  nav-icons" type="button" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" style="font-size: 24px; padding-right: 20px;"></i>
+            <img src="/dashboard/Asserts/asserts/keep_icon.png" alt="">
+            <h5>Keep</h5>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="row height mx-5">
+                    <div class="search">
+                        <div class="form">
+                            <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Search" style="width: 750px; border-radius: 50px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a href="/dashboard/Pages/dashboard.html"><i class="fa fa-repeat nav-icons" ><span class="icon"></span></i></a> -->
+                <!-- <i class=" fa fa-list px-3 nav-icons"><span class="icon"></span></i>
+                <i class="fa fa-gear nav-icons px-3"><span class="icons"></span></i> -->
+                <i class="fa fa-th nav-icons px-3"><span class="icons"></span></i>
+                <i class="fa fa-user-circle-o px-3 nav-icons"><span class="icon"></span></i>
+            </div>
+        </div>
+    </nav>
+    <!-- second section -->
+    <div class="menu " id="menu">
+        <ul class="list">
+            <li class="menu-item"><i class="fa fa-lightbulb-o"></i>Notes</li>
+            <li class="menu-item"><i class="fa fa-bell"></i>Reminders</li>
+            <li class="menu-item"><i class="fa fa-pencil"></i>Edit table</li>
+            <li class="menu-item"><i class="fa fa-archive"></i>Archieve</li>
+            <li class="menu-item"><i class="fa fa-trash-o"></i>Trash</li>
+        </ul>
+    </div>
+    <section>
+        <div class="container box">
+          <div class="d-flex justify-content-center">
+              <div class="col-md-6">
+                <div id="demo" onclick=" myFunction()" class="form"><input type="text" class="form-control form-input" placeholder="Take a note..."> <span class="left-pan"><i class="fa fa-calendar-check-o px-3"></i><i class="fa fa-edit px-3"></i><i class="fa fa-file-photo-o px-3"></i></span> </div>         
+                <form id="hello" style="display:none;">
+                    <div class="form-control form-input2">
+                      <div class="container-a">
+                  
+                        <input type="text" id="addTitle" placeholder="Title"><br>
+                        <input type="text" id="addNote" placeholder="Take a note..."><br>
+                        <span><i class="fa fa-bell"><span class="tooltiptext">RemindMe</span></i>
+                        <i class="fa fa-user-plus px-4"><span class="tooltiptext">Collab</span></i>
+                        <!-- <i class="fa-thin fa-palette"></i><span class="tooltiptext">color</span></i> -->
+                        <i class="fa fa-file-image-o px-2"><span class="tooltiptext">image</span></i>
+                        <i class="fa fa-archive px-4"><span class="tooltiptext">Archieve</span></i>
+                        <i class="fa fa-ellipsis-v px-2"><span class="tooltiptext">More</span></i>
+                        <button type="button" id="addBtn" class="btn btn-primary btn-sm">Add</button></span>
+                    </div>  
+                  </div>  
+              </form>
+                <div id="ans"></div>
+              
+        </div>
+    </div>
+    <div id="notes">
+      <!-- <div class="d-flex justify-content-center">
+        <form id="hello">
+    
+          <div class="form-control form-input2">
+            <div class="container-f">
+    
+              <input type="text" id="addTitle" placeholder="Title"><br>
+              <input type="text" id="addNote" placeholder="Take a note..."><br>
+              <span><i class="fa fa-bell"><span class="tooltiptext">RemindMe</span></i><i class="fa fa-user-plus px-4"><span class="tooltiptext">Collab</span></i><i class="fa fa-file-image-o px-2"><span class="tooltiptext">Color</span></i><i class="fa fa-archive px-4"><span class="tooltiptext">Archieve</span></i><i id="delBtn" class="fa fa-trash-o px-2"><span class="tooltiptext">Delete</span></i><i class="fa fa-ellipsis-v px-4"><span class="tooltiptext">More</span></i><button type="button" id="addBtn" class="btn btn-primary btn-sm">Add</button></span>
+            </div>  
+          </div> 
+        </form>
+      </div> -->
+    </div>
+
+
+
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dash.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+                       
+                        <!-- <span><button type="button" id="addBtn" class="btn btn-primary btn-sm">+</button></span> -->
+                      </div>  
+                    </div>  
+                </form>
+                  <!-- <div id="ans"></div> -->
+                
+          </div>
+      </div>
+      <div id="notes">
+      </div>
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/dashboard/js/dashboared.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+    </script>
+</section>
+</body>
+
+</html>

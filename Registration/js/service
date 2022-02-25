@@ -1,0 +1,22 @@
+ if (objectReg) {
+      $.ajax({
+         url: url,
+         contentType: "application/json; charset=utf-8",
+        // dataType: "json",
+         data: JSON.stringify(objectReg),
+         type: "POST",
+         success: function (result) {
+
+           // console.log("success");
+            //console.log(result);
+             alert(result);
+         },
+         error: function (msg) {
+
+            console.log("error");
+           console.log(msg);
+             alert(msg);
+         }
+      });
+   }
+   return false;
